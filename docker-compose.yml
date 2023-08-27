@@ -1,0 +1,10 @@
+version: '3'
+services:
+  db:
+    image: postgres
+    container_name: poastgresql_server_to_beecrowd
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password
+    ports:
+      - "5432:5432"
